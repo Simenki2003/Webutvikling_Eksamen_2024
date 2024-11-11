@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#nav-search{
+    width: max-content;
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 28px;
+    background-color: #f6f6f6;
+    border: 1px solid #000;
+    margin-bottom: 1.5rem;
+} 
+
+.search-input {
+    font-size: 16px;
+    color: #000;
+    margin-right: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 260px;
+}
+
+ul{
+    padding: 0;
+}
+
+.pages{
+    list-style: none;
+    padding: 1rem;
+}
+
+.pages a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.pages a:hover{
+    text-decoration: underline;
+}
+
+#logo {
+    text-decoration: none;
+    color: #000;
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+#nav-ikoner{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#nav-ikoner a{
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+#slide-banner{
+    background-image: url('https://picsum.photos/1200/400');
+    padding: 6rem 2rem;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border-radius: 16px;
+    text-align: right;
+}
+
+#slide-banner h1{
+    font-size: 50px;
+}
+
+#slide-banner p{
+    font-size: 16px;
+}
+
+#slide-banner button{
+    padding: 1rem;
+    border: none;
+    background-color: white;
+    border-radius: 28px;
+}
+
+#slide-banner button:hover{
+    background-color: #252525;
+    color: white;
+}
+
+main h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+main p{
+    text-align: center;
+    font-size: 16px;
+}
+
+#button-container{
+    justify-content: center;
+    gap: 1rem;
+    display: flex;
+    width: 100%;
+}
+
+#button-container button{
+    padding: 1rem;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 48px;
+    border: 1px solid rgb(148, 148, 148);
+    background-color: white;
+}
+
+#button-container button:hover{
+    background-color: #252525;
+    color: white;
+}
+
+#button-container #selected-button{
+        background-color: #252525 !important;
+        color: white;
+}
+
+#button-container #selected-button:hover{
+    background-color: #ffffff !important;
+    color: rgb(0, 0, 0);
+}
+
+#pdisplay{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.Product-card{
+    max-width: 500px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.Product-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    display: block;
+}
+
+.image-container{
+    position: relative;
+}
+
+.image-container i{
+    position: absolute;
+    top: 15px; 
+    right: 15px; 
+    color: white; 
+    font-size: 22px;
+    padding: 1rem; 
+    background-color: rgba(169, 169, 169, 0.5);
+    border-radius: 50%; 
+    z-index: 10;
+    backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+}
+
+.image-container i:hover{
+    background-color: rgb(255, 112, 112, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+}
+
+.plist{
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pname{
+    margin: 0;
+}
+
+.rating{
+    margin-top: 2rem;
+}
+
+.rating a{
+    font-weight: 600;
+    margin-left: 10px;    
+}
+
+#category-section{
+    margin-top: 5rem;
+}
+
+#category-section p{
+    margin-bottom: 5rem;
+}
+
+#category-container{
+    display: grid;
+    grid-gap: 1rem 1rem;
+    grid-template-columns: 1fr 400px 1fr;
+    grid-template-rows: repeat(6, 200px);
+    text-align: center;
+    justify-items: ce;
+}
+
+#category-item-1{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    background-image: url('https://picsum.photos/1200/400');
+    border-radius: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#category-item-2{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-image: url('https://picsum.photos/1200/400');
+    border-radius: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#category-item-large{
+    grid-row: 3 / 5;
+    grid-column: 2 / 3;
+    background-image: url('https://picsum.photos/1200/400');
+    border-radius: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#category-item-4{
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    background-image: url('https://picsum.photos/1200/400');
+    border-radius: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#category-item-5{
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+    background-image: url('https://picsum.photos/1200/400');
+    border-radius: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
