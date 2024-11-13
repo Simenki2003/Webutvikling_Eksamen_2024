@@ -74,6 +74,11 @@ ul{
     font-size: 24px;
 }
 
+#nav-ikoner a:hover i {
+    transform: translateY(-5px) rotate(5deg);
+    transition: transform 0.3s ease;
+}
+
 #slide-banner{
     background-image: url('https://picsum.photos/1200/600');
     padding: 6rem 2rem;
@@ -456,14 +461,16 @@ footer section{
     font-style: normal;
 }
 
+.contact address i{
+    margin-right: 0.5rem;
+}
+
 .contact h3{
     font-size: 24px;
     font-weight: 450;
 }
 
-.contact address {
-    margin: 0;
-}
+
 
 footer aside {
     margin-left: 0.25rem;
@@ -506,6 +513,80 @@ nav h3{
     font-size: 24px; 
     font-weight: 450;
 }
+
+
+
+#checkout main{
+    margin: 1rem;
+}
+
+#checkout main a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#checkout main a:hover{
+    text-decoration: underline;
+}
+
+.shopping-bag {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shopping-bag h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 2rem;
+}
+
+.shopping-bag-image {
+    max-width: 50%; 
+    height: auto;
+    margin-left: 2rem;
+}
+
+.product-details{
+    padding: 2rem;
+    margin-left: 2rem;
+}
+
+.product-details p{
+    text-align: left;
+    margin: 0;
+}
+
+.product-details h3{
+    margin: 0;
+
+}
+
+.size-quantity-container {
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+    gap: 1rem;
+}
+
+.size-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.size-selection select {
+    font-size: 16px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.quantity-selection input {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 1rem;
+}
+
 
 
 
