@@ -20,6 +20,7 @@ header{
     background-color: #f6f6f6;
     border: 1px solid #000;
     margin-bottom: 1.5rem;
+    margin-top: 2rem;
 } 
 
 .search-input {
@@ -353,8 +354,10 @@ main p{
     display: flex;
     gap: 1rem;
     overflow: scroll;
-    scrollbar-color: #5a5a5a #e0e0e0; 
+    scrollbar-color: #7a7a7a #e0e0e0; 
+    overflow-y: hidden; 
 }
+
 
 #reviews .scroll-container article {
     min-width: 300px;
@@ -407,6 +410,103 @@ main p{
 .review-text {
     text-align: left;
 }
+
+footer {
+    margin: 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+#footer-logo {
+    font-weight: 450; 
+}
+
+footer header{
+    text-align: left;
+}
+
+footer header h2{
+    font-size: 35px;
+    width: 100%;
+    margin: 0;
+}
+
+footer header p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.contact p {
+    margin: 0; 
+    margin-bottom: 10px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact address {
+    font-style: normal;
+}
+
+.contact h3{
+    font-size: 24px;
+    font-weight: 450;
+}
+
+.contact address {
+    margin: 0;
+}
+
+footer aside {
+    margin-left: 0.25rem;
+}
+
+aside h3 {
+    font-size: 24px; 
+    font-weight: 450; 
+}
+
+footer aside li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer aside li a{
+    text-decoration: none;
+    color: #000;
+}
+
+footer nav {
+    text-align: left;
+}
+
+footer nav ul {
+    display: flex
+}
+
+footer nav li{
+    list-style: none;
+}
+
+footer nav li a{
+    font-size: 25px;
+    color: #000;
+    margin-right: 1.5rem;
+}
+
+nav h3{
+    font-size: 24px; 
+    font-weight: 450;
+}
+
 
 
 
