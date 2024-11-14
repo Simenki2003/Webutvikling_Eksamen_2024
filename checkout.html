@@ -40,30 +40,93 @@
         <a href="index.html" class="continue-shopping"><i class="fa-solid fa-arrow-left"></i> Fortsett og handle</a>
         <h2>Kasse</h2>
         <section class="shopping-bag">
-            <h2>1. Shoppingbaggen din</h2>
-
-            <img src="ressurser/dress.png" alt="Dress" class="shopping-bag-image">
-
-            <section class="product-details">
-                <h3>PRODUCT NAME</h3>
-                <p>Kr 1999</p>
-                <p>Farge: Beige</p>
-            </section>
-            <section class="size-quantity-container">
-                <section class="size-selection">
-                    <label for="size">Størrelse</label>
-                    <select id="size" name="size">
+            <h2>1. SHOPPINGBAGGEN DIN</h2>
+            <section class="product-info">
+                <img src="ressurser/dress.png" alt="Dress" class="shopping-bag-image">
+                <article class="product-text">
+                    <h3>PRODUCT NAME</h3>
+                    <p>Kr 1999</p>
+                    <p>Farge: beige</p>
+                </article>
+                <article class="size-quantity">
+                    <p>Størrelse</p>
+                    <select class="size" name="size">
                         <option value="s">S</option>
                         <option value="m">M</option>
                         <option value="l">L</option>
-                        <option value="xl">XL</option>
+                        <option value="">XL</option>
                     </select>
-                </section>
-        
-                <section class="quantity-selection">
-                    <label for="quantity">Antall</label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
-                </section>
+                    <p>Antall</p>
+                    <input type="number" class="quantity" name="quantity" min="1" max="10" value="1">
+                </article>
+                <article class="icon-buttons">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-trash"></i></i></a>
+                </article>
+                <img src="ressurser/dress.png" alt="Dress" class="shopping-bag-image">
+                <article class="product-text">
+                    <h3>PRODUCT NAME</h3>
+                    <p>Kr 1999</p>
+                    <p>Farge: beige</p>
+                </article>
+                <article class="size-quantity">
+                    <p>Størrelse</p>
+                    <select class="size" name="size">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="">XL</option>
+                    </select>
+                    <p>Antall</p>
+                    <input type="number" class="quantity" name="quantity" min="1" max="10" value="1">
+                </article>
+                <article class="icon-buttons">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-trash"></i></i></a>
+                </article>
+                <img src="ressurser/dress.png" alt="Dress" class="shopping-bag-image">
+                <article class="product-text">
+                    <h3>PRODUCT NAME</h3>
+                    <p>Kr 1999</p>
+                    <p>Farge: beige</p>
+                </article>
+                <article class="size-quantity">
+                    <p>Størrelse</p>
+                    <select class="size" name="size">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="">XL</option>
+                    </select>
+                    <p>Antall</p>
+                    <input type="number" class="quantity" name="quantity" min="1" max="10" value="1">
+                </article>
+                <article class="icon-buttons">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-trash"></i></i></a>
+                </article>
+            </section>
+        </section>
+        <section class="personal-info">
+            <h2>2. Dine opplysninger</h2>
+            <section class="delivery-adress">
+                <h3>Leveringsadresse</h3>
+                <form>
+                    <p>Fornavn</p>
+                    <input type="text" id="first-name" name="first-name" placeholder="Nora*" required>
+
+                    <p>Etternavn</p>
+                    <input type="text" id="last-name" name="last-name" placeholder="Nordmann*" required>
+
+                    <p>Gateadresse</p> <!--ChatGPT-->
+                    <input type="text" id="address" name="address" placeholder="BRA veien 4*" required>
+
+                    <p>Postnummer</p>
+                    <input type="number" id="postal-code" name="postal-code" placeholder="1752*" min="0001" max="5069" required>
+
+                    <p>Poststed</p>
+                    <input type="text" id="city" name="city" placeholder="Halden*" required>
+                </form>
             </section>
         </section>
     </main>
@@ -76,7 +139,7 @@
             <article class="contact">
                 <h3>KONTAKT</h3>
                 <address>
-                    <p><i class="fa-solid fa-location-dot"></i><strong> Adresse:</strong> B R A Veien 4, 1757 Halden </p>
+                    <p><i class="fa-solid fa-location-dot"></i><strong> Adresse:</strong> B R A Veien 4, 1757 Halden </p> <!--ChatGPT-->
                     <p><i class="fa-solid fa-phone"></i><strong> Telefon:</strong><a href="tel:+4769608000"> 69 60 80 00</a></p>
                     <p><i class="fa-solid fa-envelope"></i><strong> E-post:</strong> <a href="mailto:halden@hiof.no"> halden@hiof.no</a></p>
                     <p><i class="fa-solid fa-clock"></i><strong> Åpningstider:</strong> Stenger 15:00</p>
