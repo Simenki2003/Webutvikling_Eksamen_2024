@@ -113,19 +113,24 @@
                 <h3>Leveringsadresse</h3>
                 <form>
                     <p>Fornavn</p>
-                    <input type="text" id="first-name" name="first-name" placeholder="Nora*" required>
-
+                    <input type="text" class="info-input" name="first-name" placeholder="Nora*" required>
                     <p>Etternavn</p>
-                    <input type="text" id="last-name" name="last-name" placeholder="Nordmann*" required>
-
+                    <input type="text" class="info-input" name="last-name" placeholder="Nordmann*" required>
                     <p>Gateadresse</p> <!--ChatGPT-->
-                    <input type="text" id="address" name="address" placeholder="BRA veien 4*" required>
-
+                    <input type="text" class="info-input" name="address" placeholder="BRA veien 4*" required>
                     <p>Postnummer</p>
-                    <input type="number" id="postal-code" name="postal-code" placeholder="1752*" min="0001" max="5069" required>
-
+                    <input type="number" class="info-input" name="postal-code" placeholder="1752*" min="0001" max="5069" required>
                     <p>Poststed</p>
-                    <input type="text" id="city" name="city" placeholder="Halden*" required>
+                    <input type="text" class="info-input" name="city" placeholder="Halden*" required>
+                </form>
+            </section>
+            <section class="contact-info">
+                <h3>Kontaktinformasjon</h3>
+                <form>
+                    <p>E-post</p>
+                    <input type="text" class="info-input" name="e-mail" placeholder="Noranordmann@hiof.no...*">
+                    <p>Telefon</p>
+                    <input type="text" class="info-input" name="pnumber" placeholder="+4749***018">
                 </form>
             </section>
         </section>

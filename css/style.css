@@ -543,6 +543,7 @@ nav h3{
 .shopping-bag-image {
     max-width: 60%; 
     height: auto;
+    padding-top: 2rem;
 }
 
 .product-info{
@@ -607,33 +608,23 @@ nav h3{
     text-align: left;
 }
 
-#first-name{
+.info-input{
     width: 100%;
     padding: 1rem;
-}
-
-#last-name{
-    width: 100%;
-    padding: 1rem;
-}
-
-#address{
-    width: 100%;
-    padding: 1rem;
-}
-
-#postal-code{
-    width: 100%;
-    padding: 1rem;
-}
-
-#city{
-    width: 100%;
-    padding: 1rem;
-
 }
 
 .delivery-adress form p{
+    margin: 0;
+    text-align: left;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.contact-info h3 {
+    padding-top: 4rem;
+}
+
+.contact-info form p{
     margin: 0;
     text-align: left;
     font-weight: 500;
