@@ -111,14 +111,14 @@ ul{
 
 /* Fiks css, fjern main p. Gi p main class eller id*/
  
+.p-cent{
+    text-align: center;
+    font-size: 16px;
+}
+
 .h2-cent{
     text-align: center;
     font-size: 40px;
-}
-
-main p{
-    text-align: center;
-    font-size: 16px;
 }
 
 #button-container{
@@ -222,6 +222,14 @@ main p{
 
 .pname{
     margin: 0;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pname:hover{
+    text-decoration: underline;
 }
 
 .rating{
@@ -536,8 +544,10 @@ nav h3{
     padding: 2rem;
 }
 
-.shopping-bag h2{
+.sb-headline {
     font-size: 25px;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 .shopping-bag-image {
@@ -598,12 +608,6 @@ nav h3{
     padding: 2rem;
 }
 
-.personal-info h2 {
-    font-size: 25px;
-    text-transform: uppercase;
-    text-align: left;
-}
-
 .delivery-adress h3{
     text-align: left;
 }
@@ -611,6 +615,7 @@ nav h3{
 .info-input{
     width: 100%;
     padding: 1rem;
+    
 }
 
 .delivery-adress form p{
@@ -630,6 +635,112 @@ nav h3{
     font-weight: 500;
     margin-top: 0.5rem;
 }
+
+.black-btn{
+    display: inline-block;
+    padding: 1rem;
+    color: #fff;
+    background-color: #343434;
+    border: 1px solid #343434;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+#buttons{
+    padding-top: 4rem;
+}
+
+.black-btn:hover{
+    background-color: #fff;
+    border: 1px solid #343434;
+    color: #000;
+}
+
+#cancel {
+    display: inline-block;
+    padding: 2rem;
+    width: 100%;
+    text-decoration: underline !important;
+    text-align: center;
+    color: blue;
+}
+
+#cancel:hover{
+    color: purple;
+}
+
+.delivery{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.delivery h3{
+    padding-top: 2rem;
+    margin: 0;
+}
+
+.delivery-card{
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.delivery-card label{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.bold-text{
+    margin: 0;
+    font-weight: 600;
+}
+
+.working-days {
+    color: gray;
+    font-weight: 600;
+}
+
+.payment{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.payment-info form p{
+    margin: 0;
+    text-align: left;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.finish-payment{
+    text-align: center;
+}
+
+#top-border{
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+#checkbox{
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox-text{
+    width: 100%;
+    padding: 1rem;
+}
+
+.checkbox-text i{
+    font-style: normal;
+}
+
+
+
 
 
 
