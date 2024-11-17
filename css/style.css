@@ -530,12 +530,12 @@ nav h3{
     margin: 1rem;
 }
 
-#checkout main a{
+.continue-shopping{
     text-decoration: none;
     font-size: 18px;
 }
 
-#checkout main a:hover{
+.continue-shopping:hover{
     text-decoration: underline;
 }
 
@@ -850,6 +850,10 @@ details summary{
     justify-content: space-between;
 }
 
+details summary i{
+    font-style: normal;
+}
+
 #materials ul {
     padding: 1rem;
 }
@@ -864,7 +868,19 @@ details summary{
     padding-bottom: 2rem;
 }
 
+#previews {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
+#review-container {
+    margin-top: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 
 
