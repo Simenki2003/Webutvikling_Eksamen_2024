@@ -739,6 +739,131 @@ nav h3{
     font-style: normal;
 }
 
+#products main {
+    margin: 1rem;
+}
+
+#website-path {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#p-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+}
+
+#p-grid-container img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+#image1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#image2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#image3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+#image4 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 4;
+}
+
+#name-brand-color h3{
+    font-size: 24px;
+}
+
+#brand-text{
+    text-transform: uppercase;
+    color: gray;
+    text-decoration: underline;
+}
+
+#product-size {
+    padding: 1rem;
+    width: 100%;
+}
+
+#product-buttons {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+
+#black-btn2 {
+    display: inline-block;
+    padding: 1rem;
+    color: #fff;
+    background-color: #000000;
+    border: 1px solid #000000;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+#black-btn2:hover{
+    background-color: #fff;
+    border: 1px solid #000000;
+    color: #000;
+}
+
+.fa-btn{
+    padding: 1rem;
+    font-size: 20px;
+    color: #000;
+    border: 1px solid #000000;
+}
+
+.fa-btn:hover{
+    background-color: #000;
+    color: white;
+}
+
+#border {
+    border-top: 1px solid #000000;
+}
+
+#materials {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+details summary{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#materials ul {
+    padding: 1rem;
+}
+
+#pdetails {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#sdetails {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 
 
 
