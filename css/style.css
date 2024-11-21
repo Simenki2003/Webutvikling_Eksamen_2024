@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
 *{
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+
+/*CSS HEADER*/
 
 header{
     display: flex;
@@ -78,6 +81,8 @@ ul{
     transform: translateY(-5px) rotate(5deg);
     transition: transform 0.3s ease;
 }
+
+/*CSS INDEX*/
 
 #slide-banner{
     background-image: url('https://picsum.photos/1200/600');
@@ -426,6 +431,8 @@ ul{
     text-align: left;
 }
 
+/*CSS FOOTER*/
+
 footer {
     margin: 1rem;
     padding-top: 2rem;
@@ -524,6 +531,8 @@ nav h3{
     font-weight: 450;
 }
 
+
+/*CSS CHECKOUT*/
 
 
 #checkout main{
@@ -739,6 +748,8 @@ nav h3{
     font-style: normal;
 }
 
+/*CSS PRODUCTS*/
+
 #products main {
     margin: 1rem;
 }
@@ -881,6 +892,59 @@ details summary i{
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 700px){
+
+    /*HEADER*/
+
+    header nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*BANNER*/
+
+
+
+}
+
+@media (min-width: 900px){
+
+    /*HEADER*/
+
+
+}
+
+@media (min-width: 1100px){
+
+    /*HEADER*/
+
+    body {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        padding: 3rem;
+        flex-wrap: wrap;
+    }
+
+    header nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /*BANNER*/
+
+}
+
+
 
 
 
