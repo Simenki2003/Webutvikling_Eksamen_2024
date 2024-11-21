@@ -84,7 +84,7 @@ ul{
 
 /*CSS INDEX*/
 
-#slide-banner{
+#banner-1{
     background-image: url('https://picsum.photos/1200/600');
     padding: 6rem 2rem;
     background-size: cover;
@@ -94,24 +94,36 @@ ul{
     margin: 1rem;
 }
 
-#slide-banner h1{
+#banner-1 h1{
     font-size: 50px;
 }
 
-#slide-banner p{
+#banner-1 p{
     font-size: 16px;
 }
 
-#slide-banner button{
+#banner-1 button{
     padding: 1rem;
     border: none;
     background-color: white;
     border-radius: 28px;
 }
 
-#slide-banner button:hover{
+#banner-1 button:hover{
     background-color: #252525;
     color: white;
+}
+
+.arrows{
+    display: none;
+}
+
+#banner-2 {
+    display: none;
+}
+
+#banner-3 {
+    display: none;
 }
 
 /* Fiks css, fjern main p. Gi p main class eller id*/
@@ -907,6 +919,10 @@ details summary i{
 
     /*BANNER*/
 
+    
+
+
+
 
 
 }
@@ -914,6 +930,8 @@ details summary i{
 @media (min-width: 900px){
 
     /*HEADER*/
+
+    
 
 
 }
@@ -933,25 +951,133 @@ details summary i{
         flex-wrap: wrap;
     }
 
+    #logo {
+        align-self: center !important;
+    }
+
     header nav{
         display: flex;
         align-items: center;
-        justify-content: space-between;
         width: 100%;
     }
 
     /*BANNER*/
 
+    #slide-banner {
+        background-image: none;
+        padding: 0;
+        margin: 0;
+        display: flex; 
+        overflow-x: scroll;        
+        scroll-snap-type: x mandatory; 
+        -webkit-overflow-scrolling: touch; 
+        scroll-behavior: smooth; 
+    }
+
+    #banner-1 {
+        position: relative;
+        display: block;
+        background-image: url('https://picsum.photos/1200/600');
+        padding: 8rem 3rem;
+        background-size: cover;
+        background-position: center;
+        border-radius: 16px;
+        text-align: right;
+    }
+
+
+    #banner-2 {
+        display: block;
+        background-image: url('https://picsum.photos/1200/600');
+        padding: 8rem 3rem;
+        background-size: cover;
+        background-position: center;
+        border-radius: 16px;
+        text-align: right;
+        margin: 1rem; 
+    }
+
+    #banner-2 h1{
+        font-size: 50px;
+    }
+    
+    #banner-2 p{
+        font-size: 16px;
+    }
+    
+    #banner-2 button{
+        padding: 1rem;
+        border: none;
+        background-color: white;
+        border-radius: 28px;
+    }
+    
+    #banner-2 button:hover{
+        background-color: #252525;
+        color: white;
+    }
+
+    #banner-3 {
+        display: block;
+        background-image: url('https://picsum.photos/1200/600');
+        padding: 8rem 3rem;
+        background-size: cover;
+        background-position: center;
+        border-radius: 16px;
+        text-align: right;
+        margin: 1rem; 
+    }
+
+    #banner-3 h1{
+        font-size: 50px;
+    }
+    
+    #banner-3 p{
+        font-size: 16px;
+    }
+    
+    #banner-3 button{
+        padding: 1rem;
+        border: none;
+        background-color: white;
+        border-radius: 28px;
+    }
+    
+    #banner-3 button:hover{
+        background-color: #252525;
+        color: white;
+    }
+    
+    #slide-banner article {
+        min-width: 100%; 
+        scroll-snap-align: center; 
+    }
+
+    .scroll-container {
+        width: 100%; 
+        overflow-x: auto; 
+        white-space: nowrap; 
+    }
+
+    .arrows{
+        position: absolute; 
+        top: 50%;
+        width: 100%; 
+        display: flex; 
+        justify-content: space-between; 
+    }
+
+    .left {
+        position: absolute;
+        font-size: 50px;
+    }
+
+    .right {
+        position: absolute;
+        font-size: 50px;
+    }
+    
+
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
