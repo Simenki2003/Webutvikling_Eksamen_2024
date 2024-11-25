@@ -582,6 +582,11 @@ nav h3{
     gap: 1.5rem;
 }
 
+.product-text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .product-info h3{
     margin: 0;
 }
@@ -595,6 +600,7 @@ nav h3{
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    padding-bottom:1rem;
 }
 
 .size{
@@ -1004,15 +1010,125 @@ details summary i{
         padding-bottom: 5rem;
     }
 
+    /*CHECKOUT*/
+
+   
 
 }
 
-@media (min-width: 900px){
+@media (min-width: 850px){
+
+    /*HEADER*/
+
+    .continue-shopping{
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    #headline-checkout {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    /*MAIN*/
+
+    .sb-headline {
+        font-size: 30px;
+        padding-top: 1rem;
+    }
 
 
+    .shopping-bag {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        padding-left: 20%;
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
 
+    .shopping-bag-image {
+        max-width: 30%; 
+        padding: 0;
+    }
+
+    .sb-card {
+        display: flex;
+        align-items: center;
+    }
+
+    .product-text {
+        padding: 2rem;
+        font-size: 18px;
+    }
+    
+    .size-quantity {
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        font-size: 18px;
+    }
+
+    .icon-buttons {
+        display: flex;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .icon-buttons i {
+        font-size: 22px;
+    }
+
+    .personal-info {
+        padding: 0;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
     
 
+    #name-fields {
+        gap: 1rem;
+        display: flex;
+    }
+
+    #name-fields article {
+        flex: 1;
+    }
+
+    #mail-info {
+        gap: 1rem;
+        display: flex;
+    }
+
+    #mail-info article {
+        flex: 1;
+    }
+
+    .delivery {
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    #payment-fields {
+        gap: 1rem;
+        display: flex;
+    }
+
+    #payment-fields article {
+        flex: 1;
+    }
+
+    .payment {
+        padding: 0;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
 
 }
 
@@ -1249,6 +1365,8 @@ details summary i{
 
     /*CHECKOUT*/
 
+    /*HEADER*/
+
     .continue-shopping{
         text-decoration: none;
         font-size: 22px;
@@ -1259,8 +1377,11 @@ details summary i{
         text-align: center;
     }
 
+    /*MAIN*/
+
     .sb-headline {
         font-size: 30px;
+        padding-top: 1rem;
     }
 
 
@@ -1268,7 +1389,10 @@ details summary i{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0;
         padding-left: 20%;
+        padding-bottom: 3%;
+        padding-top: 3%;
     }
 
     .shopping-bag-image {
@@ -1281,16 +1405,12 @@ details summary i{
         align-items: center;
     }
 
-    .sb-article {
-        width: 100%;
-    }
-
     .product-text {
         padding: 2rem;
+        font-size: 18px;
     }
     
     .size-quantity {
-        width: 50%;
         padding-bottom: 2rem;
         padding-left: 2rem;
         font-size: 18px;
@@ -1302,7 +1422,60 @@ details summary i{
         padding-bottom: 2rem;
     }
 
+    .icon-buttons i {
+        font-size: 22px;
+    }
 
+    .personal-info {
+        padding: 0;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    
+
+    #name-fields {
+        gap: 1rem;
+        display: flex;
+    }
+
+    #name-fields article {
+        flex: 1;
+    }
+
+    #mail-info {
+        gap: 1rem;
+        display: flex;
+    }
+
+    #mail-info article {
+        flex: 1;
+    }
+
+    .delivery {
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    #payment-fields {
+        gap: 1rem;
+        display: flex;
+    }
+
+    #payment-fields article {
+        flex: 1;
+    }
+
+    .payment {
+        padding: 0;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
 
 
 

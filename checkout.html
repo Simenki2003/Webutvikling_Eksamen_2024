@@ -67,47 +67,55 @@
                         </article>
                     </article>
                 </article>
-                <img src="ressurser/dress.png" alt="Dress" class="shopping-bag-image">
-                <article class="product-text">
-                    <h3>PRODUCT NAME</h3>
-                    <p>Kr 1999</p>
-                    <p>Farge: beige</p>
+                <article class="sb-card">
+                    <img src="ressurser/dress.png" alt="Dress" class="shopping-bag-image">
+                    <article class="sb-article">
+                        <article class="product-text">
+                            <h3>PRODUCT NAME</h3>
+                            <p>Kr 1999</p>
+                            <p>Farge: beige</p>
+                        </article>
+                        <article class="size-quantity">
+                            <p>Størrelse</p>
+                            <select class="size" name="size">
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="">XL</option>
+                            </select>
+                            <p>Antall</p>
+                            <input type="number" class="quantity" name="quantity" min="1" max="10" value="1">
+                        </article>
+                        <article class="icon-buttons">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-trash"></i></a>
+                        </article>
+                    </article>
                 </article>
-                <article class="size-quantity">
-                    <p>Størrelse</p>
-                    <select class="size" name="size">
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                        <option value="">XL</option>
-                    </select>
-                    <p>Antall</p>
-                    <input type="number" class="quantity" name="quantity" min="1" max="10" value="1">
-                </article>
-                <article class="icon-buttons">
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-solid fa-trash"></i></a>
-                </article>
-                <img src="ressurser/dress.png" alt="Dress" class="shopping-bag-image">
-                <article class="product-text">
-                    <h3>PRODUCT NAME</h3>
-                    <p>Kr 1999</p>
-                    <p>Farge: beige</p>
-                </article>
-                <article class="size-quantity">
-                    <p>Størrelse</p>
-                    <select class="size" name="size">
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                        <option value="">XL</option>
-                    </select>
-                    <p>Antall</p>
-                    <input type="number" class="quantity" name="quantity" min="1" max="10" value="1">
-                </article>
-                <article class="icon-buttons">
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <a href="#"><i class="fa-solid fa-trash"></i></a>
+                <article class="sb-card">
+                    <img src="ressurser/dress.png" alt="Dress" class="shopping-bag-image">
+                    <article class="sb-article">
+                        <article class="product-text">
+                            <h3>PRODUCT NAME</h3>
+                            <p>Kr 1999</p>
+                            <p>Farge: beige</p>
+                        </article>
+                        <article class="size-quantity">
+                            <p>Størrelse</p>
+                            <select class="size" name="size">
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="">XL</option>
+                            </select>
+                            <p>Antall</p>
+                            <input type="number" class="quantity" name="quantity" min="1" max="10" value="1">
+                        </article>
+                        <article class="icon-buttons">
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            <a href="#"><i class="fa-solid fa-trash"></i></a>
+                        </article>
+                    </article>
                 </article>
             </section>
         </section>
@@ -116,16 +124,30 @@
             <article class="delivery-adress">
                 <h3>Leveringsadresse</h3>
                 <form>
-                    <p>Fornavn</p>
-                    <input type="text" class="info-input" name="first-name" placeholder="Nora*" required>
-                    <p>Etternavn</p>
-                    <input type="text" class="info-input" name="last-name" placeholder="Nordmann*" required>
-                    <p>Gateadresse</p> <!--ChatGPT-->
-                    <input type="text" class="info-input" name="address" placeholder="BRA veien 4*" required>
-                    <p>Postnummer</p>
-                    <input type="number" class="info-input" name="postal-code" placeholder="1752*" min="0001" max="9999" required>
-                    <p>Poststed</p>
-                    <input type="text" class="info-input" name="city" placeholder="Halden*" required>
+                    <article id="name-fields">
+                        <article>
+                            <p>Fornavn</p>
+                            <input type="text" class="info-input" name="first-name" placeholder="Nora*" required>
+                        </article>
+                        <article>
+                            <p>Etternavn</p>
+                            <input type="text" class="info-input" name="last-name" placeholder="Nordmann*" required>
+                        </article>
+                    </article>
+                    <article id="street-address">
+                        <p>Gateadresse</p> <!--ChatGPT-->
+                        <input type="text" class="info-input" name="address" placeholder="BRA veien 4*" required>
+                    </article>
+                    <article id="mail-info">
+                        <article>
+                            <p>Postnummer</p>
+                            <input type="number" class="info-input" name="postal-code" placeholder="1752*" min="0001" max="9999" required>
+                        </article>
+                        <article>
+                            <p>Poststed</p>
+                            <input type="text" class="info-input" name="city" placeholder="Halden*" required>  
+                        </article>
+                    </article>
                 </form>
             </article>
             <section class="contact-info">
@@ -181,10 +203,16 @@
                 <form>
                     <p>Kortnummer</p> 
                     <input type="number" class="info-input" name="card-number" placeholder="342342****4435" required>
-                    <p>Utløpsdato</p>
-                    <input type="date" class="info-input" name="expiration-date" required>
-                    <p>CVC/CVV</p>
-                    <input type="text" class="info-input" name="CVC/CVV" placeholder="CVC/CVV*" required>
+                    <article id="payment-fields">
+                        <article>
+                            <p>Utløpsdato</p>
+                            <input type="date" class="info-input" name="expiration-date" required>
+                        </article>
+                        <article>
+                            <p>CVC/CVV</p>
+                            <input type="text" class="info-input" name="CVC/CVV" placeholder="CVC/CVV*" required>
+                        </article>
+                    </article>
                 </form>
             </article>
             <article class="finish-payment">
