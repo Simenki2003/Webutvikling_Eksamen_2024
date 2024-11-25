@@ -1477,6 +1477,54 @@ details summary i{
         padding-bottom: 3%;
     }
 
+    /*PRODUCTS*/
+
+    #desktop-flex {
+        display: flex;
+        gap: 5%;
+    }
+
+    #desktop-column {
+        width: 100%;
+    }
+
+    #p-grid-container {
+        width: 100%;
+        position: sticky;
+        top: 1rem; 
+        z-index: 10;
+    }
+
+    #p-grid-container img {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #website-path {
+        font-size: 20px;
+    }
+
+    #name-brand-color h3 {
+        font-size: 30px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #brand-text {
+        font-size: 20px;
+        margin: 0;
+    }
+
+
+
+
+
+    
+
+    
+
+
+
+
 
 
 }
