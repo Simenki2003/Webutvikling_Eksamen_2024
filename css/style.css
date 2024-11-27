@@ -87,6 +87,33 @@ ul{
     transition: transform 0.3s ease;
 }
 
+/*SCROLL TO TOP*/
+
+.scroll-to-top {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    z-index: 20;
+    font-size: 15px;
+    color: white;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px)
+}
+
+.scroll-to-top:hover {
+    background-color: black;
+    transition: background-color 0.1s ease;
+}
+
 /*CSS INDEX*/
 
 .arrow-container {
@@ -95,7 +122,7 @@ ul{
 }
 
 #banner-1{
-    background-image: url('https://picsum.photos/id/439/1200/600');
+    background-image: url('../ressurser/bakgrunn-1.jpg');
     padding: 6rem 2rem;
     background-size: cover;
     background-position: center;
@@ -934,12 +961,38 @@ details summary i{
 @media (min-width: 700px){
 
     /*HEADER*/
-    
 
     header nav ul{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    /*SCROLL TO TOP*/
+
+    .scroll-to-top {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 35px;
+        height: 35px;
+        z-index: 20;
+        font-size: 15px;
+        color: white;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px)
+    }
+
+    .scroll-to-top:hover {
+        background-color: black;
+        transition: background-color 0.1s ease;
     }
 
     /*BANNER*/
@@ -1221,8 +1274,34 @@ details summary i{
         justify-content: space-between;
         margin: 1rem;
     }
-    
 
+    /*SCROLL TO TOP*/
+
+    .scroll-to-top {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 45px;
+        height: 45px;
+        z-index: 20;
+        font-size: 15px;
+        color: white;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px)
+    }
+
+    .scroll-to-top:hover {
+        background-color: black;
+        transition: background-color 0.1s ease;
+    }
+    
     /*BANNER*/
 
     #slide-banner {
@@ -1239,7 +1318,7 @@ details summary i{
     #banner-1 {
         position: relative;
         display: block;
-        background-image: url('https://picsum.photos/id/439/1200/600');
+        background-image: url('../ressurser/bakgrunn-1.jpg');
         padding: 8rem 5rem;
         background-size: cover;
         background-position: center;
@@ -1252,7 +1331,7 @@ details summary i{
     #banner-2 {
         position: relative;
         display: block;
-        background-image: url('https://picsum.photos/id/432/1200/600');
+        background-image: url('../ressurser/bakgrunn-2.jpg');
         padding: 8rem 5rem;
         background-size: cover;
         background-position: center;
@@ -1292,7 +1371,7 @@ details summary i{
     #banner-3 {
         position: relative;
         display: block;
-        background-image: url('https://picsum.photos/id/435/1200/600');
+        background-image: url('../ressurser/bakgrunn-3.jpg');
         padding: 8rem 5rem;
         background-size: cover;
         background-position: center;
@@ -1353,9 +1432,8 @@ details summary i{
         position: absolute;
         font-size: 20px;
         color: white;
-        font-size: 20px;
         padding: 1rem; 
-        background-color: rgba(169, 169, 169, 0.5);
+        background-color: rgba(105, 105, 105, 0.5);
         border-radius: 50%; 
         backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
@@ -1366,11 +1444,10 @@ details summary i{
         top: 45%;
         left: 20px;
         position: absolute;
-        font-size: 20px;
         color: white;
         font-size: 20px;
         padding: 1rem; 
-        background-color: rgba(169, 169, 169, 0.5);
+        background-color: rgba(105, 105, 105, 0.5);
         border-radius: 50%; 
         backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);

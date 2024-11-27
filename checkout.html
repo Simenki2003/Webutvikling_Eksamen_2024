@@ -12,7 +12,8 @@
     <title>Eksamen</title>
 </head>
 <body id="checkout">
-    <header>
+    <a href="#skip-to-top" class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    <header id="skip-to-top">
         <nav>
             <form>
                 <label id="nav-search">
@@ -27,7 +28,7 @@
             <a href="index.html" id="logo">Logo</a>
             <ul class = "nav">
                 <li class = "pages"><a href="index.html#category-section">Kategorier</a></li>
-                <li class = "pages"><a href="#footer-logo">Kontakt Oss</a></li> 
+                <li class = "pages"><a href="#footer-shortcut">Kontakt Oss</a></li> 
             </ul>
             <ul id="nav-ikoner">
                 <li><a href ="#"><i class="fa-regular fa-user"></i></a></li>
@@ -127,16 +128,16 @@
                     <article id="name-fields">
                         <article>
                             <p>Fornavn</p>
-                            <input type="text" class="info-input" name="first-name" placeholder="Nora*" required>
+                            <input type="text" class="info-input" name="first-name" placeholder="Nora*" maxlength="30" required>
                         </article>
                         <article>
                             <p>Etternavn</p>
-                            <input type="text" class="info-input" name="last-name" placeholder="Nordmann*" required>
+                            <input type="text" class="info-input" name="last-name" placeholder="Nordmann*" maxlength="50" required>
                         </article>
                     </article>
                     <article id="street-address">
-                        <p>Gateadresse</p> <!--ChatGPT-->
-                        <input type="text" class="info-input" name="address" placeholder="BRA veien 4*" required>
+                        <p>Gateadresse</p> 
+                        <input type="text" class="info-input" name="address" placeholder="BRA veien 4*" maxlength="50" required>
                     </article>
                     <article id="mail-info">
                         <article>
@@ -145,7 +146,7 @@
                         </article>
                         <article>
                             <p>Poststed</p>
-                            <input type="text" class="info-input" name="city" placeholder="Halden*" required>  
+                            <input type="text" class="info-input" name="city" placeholder="Halden*" maxlength="50" required>  
                         </article>
                     </article>
                 </form>
@@ -154,9 +155,9 @@
                 <h3>Kontaktinformasjon</h3>
                 <form>
                     <p>E-post</p>
-                    <input type="text" class="info-input" name="e-mail" placeholder="Noranordmann@hiof.no...*" required>
+                    <input type="text" class="info-input" name="e-mail" placeholder="Noranordmann@hiof.no...*" maxlength="50" required>
                     <p>Telefon</p>
-                    <input type="text" class="info-input" name="pnumber" placeholder="+4749***018" required>
+                    <input type="number" class="info-input" name="pnumber" placeholder="+4749***018" required>
                 </form>
                 <article id="buttons"> 
                     <a class="black-btn" href="#">Lagre</a> 
@@ -231,7 +232,7 @@
             </article>
         </section>
     </main>
-    <footer>    
+    <footer id="footer-shortcut">    
         <h2 id="footer-logo">Logo</h2>
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
         <section>
