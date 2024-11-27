@@ -89,8 +89,13 @@ ul{
 
 /*CSS INDEX*/
 
+#arrow-container {
+    display: none;
+    width: 100%;
+}
+
 #banner-1{
-    background-image: url('https://picsum.photos/1200/600');
+    background-image: url('https://picsum.photos/id/439/1200/600');
     padding: 6rem 2rem;
     background-size: cover;
     background-position: center;
@@ -117,6 +122,9 @@ ul{
 #banner-1 button:hover{
     background-color: #252525;
     color: white;
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.1s ease, color 0.1s ease;  
 }
 
 .arrows{
@@ -233,6 +241,9 @@ ul{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.1s ease, color 0.1s ease; ; 
 }
 
 .plist{
@@ -916,6 +927,7 @@ details summary i{
 @media (min-width: 700px){
 
     /*HEADER*/
+    
 
     header nav ul{
         display: flex;
@@ -1130,6 +1142,48 @@ details summary i{
         padding-bottom: 3%;
     }
 
+    /*PRODUCTS*/
+
+    #desktop-flex {
+        display: flex;
+        gap: 5%;
+        margin-bottom: 5%;
+    }
+
+    #desktop-column {
+        width: 100%;
+    }
+
+    #p-grid-container {
+        width: 100%;
+        position: sticky;
+        top: 1rem; 
+        z-index: 10;
+    }
+
+    #p-grid-container img {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #website-path {
+        font-size: 20px;
+    }
+
+    #name-brand-color h3 {
+        font-size: 30px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #brand-text {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    #reviews {
+        margin: 0;
+    }
+
 }
 
 @media (min-width: 1100px){
@@ -1176,25 +1230,29 @@ details summary i{
     }
 
     #banner-1 {
+        position: relative;
         display: block;
-        background-image: url('https://picsum.photos/1200/600');
-        padding: 8rem 3rem;
+        background-image: url('https://picsum.photos/id/439/1200/600');
+        padding: 8rem 5rem;
         background-size: cover;
         background-position: center;
         border-radius: 16px;
         text-align: right;
+        overflow: hidden
     }
 
 
     #banner-2 {
+        position: relative;
         display: block;
-        background-image: url('https://picsum.photos/1200/600');
-        padding: 8rem 3rem;
+        background-image: url('https://picsum.photos/id/432/1200/600');
+        padding: 8rem 5rem;
         background-size: cover;
         background-position: center;
         border-radius: 16px;
         text-align: left;
         margin: 1rem; 
+        overflow: hidden
     }
 
     #banner-2 h1{
@@ -1218,13 +1276,17 @@ details summary i{
     
     #banner-2 button:hover{
         background-color: white;
-        color: #252525
+        color: #252525;
+        transform: translateY(-3px); 
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.1s ease, color 0.1s ease; ; 
     }
 
     #banner-3 {
+        position: relative;
         display: block;
-        background-image: url('https://picsum.photos/1200/600');
-        padding: 8rem 3rem;
+        background-image: url('https://picsum.photos/id/435/1200/600');
+        padding: 8rem 5rem;
         background-size: cover;
         background-position: center;
         border-radius: 16px;
@@ -1252,6 +1314,9 @@ details summary i{
     #banner-3 button:hover{
         background-color: #252525;
         color: white;
+        transform: translateY(-3px); 
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.1s ease, color 0.1s ease; ; 
     }
     
     #slide-banner article {
@@ -1263,6 +1328,60 @@ details summary i{
         width: 100%; 
         overflow-x: auto; 
     }
+
+
+    #arrow-container {
+        display: flex;
+        width: 100%;
+        
+    }
+
+    .fa-arrows {
+        z-index: 10;
+    }
+
+    .right {
+        top: 45%;
+        right: 20px;
+        position: absolute;
+        font-size: 20px;
+        color: white;
+        font-size: 20px;
+        padding: 1rem; 
+        background-color: rgba(169, 169, 169, 0.5);
+        border-radius: 50%; 
+        backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px)
+    }
+
+    .left {
+        top: 45%;
+        left: 20px;
+        position: absolute;
+        font-size: 20px;
+        color: white;
+        font-size: 20px;
+        padding: 1rem; 
+        background-color: rgba(169, 169, 169, 0.5);
+        border-radius: 50%; 
+        backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px)
+    }
+
+    .left:hover {
+        transform: translateY(-3px); 
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .right:hover {
+        transform: translateY(-3px); 
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
 
     #banner-1 button {
         text-transform: uppercase;
@@ -1482,6 +1601,7 @@ details summary i{
     #desktop-flex {
         display: flex;
         gap: 5%;
+        margin-bottom: 5%;
     }
 
     #desktop-column {
@@ -1513,6 +1633,12 @@ details summary i{
         font-size: 20px;
         margin: 0;
     }
+
+    #reviews {
+        margin: 0;
+    }
+
+
 
 
 
