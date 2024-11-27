@@ -89,7 +89,7 @@ ul{
 
 /*CSS INDEX*/
 
-#arrow-container {
+.arrow-container {
     display: none;
     width: 100%;
 }
@@ -199,7 +199,7 @@ ul{
 }
 
 .Product-card{
-    max-width: 450px;
+    max-width: 350px;
     width: 100%;
     margin-top: 2rem;
 }
@@ -426,6 +426,7 @@ ul{
 }
 
 .profile-image img {
+    max-width: 150px;
     width: 100px;
     height: 100px;
     border-radius: 50%; 
@@ -1336,7 +1337,7 @@ details summary i{
     }
 
 
-    #arrow-container {
+    .arrow-container {
         display: flex;
         width: 100%;
         
