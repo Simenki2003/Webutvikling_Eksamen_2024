@@ -171,6 +171,9 @@ ul{
 #button-container button:hover{
     background-color: #252525;
     color: white;
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.1s ease, color 0.1s ease; ; 
 }
 
 #button-container #selected-button{
@@ -181,6 +184,9 @@ ul{
 #button-container #selected-button:hover{
     background-color: #ffffff !important;
     color: rgb(0, 0, 0);
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.1s ease, color 0.1s ease; ; 
 }
 
 #pdisplay{
@@ -1598,6 +1604,8 @@ details summary i{
 
     /*PRODUCTS*/
 
+    /*MAIN*/
+
     #desktop-flex {
         display: flex;
         gap: 5%;
@@ -1613,6 +1621,7 @@ details summary i{
         position: sticky;
         top: 1rem; 
         z-index: 10;
+        
     }
 
     #p-grid-container img {
@@ -1635,6 +1644,10 @@ details summary i{
     }
 
     #reviews {
+        margin: 0;
+    }
+
+    #products main {
         margin: 0;
     }
 
