@@ -16,24 +16,24 @@
     <header id="skip-to-top">
         <nav>
             <form>
-                <label id="nav-search">
-                    <input class="search-input" type="search" placeholder="Søk her">
-                    <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                <label id="nav-search" aria-label="Search">
+                    <input class="search-input" type="search" placeholder="Søk her" aria-label="Search website">
+                    <i class="search-icon fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                 </label>
             </form>
             <ul class = "nav">
-                <li class = "pages"><a href="index.html">Hjem</a></li>
-                <li class = "pages"><a href="index.html#p-shortcut">Produkter</a></li>
+                <li class = "pages"><a href="index.html" aria-label="Go to homepage">Hjem</a></li>
+                <li class = "pages"><a href="index.html#p-shortcut" aria-label="Go to products section">Produkter</a></li>
             </ul>
             <a href="index.html" id="logo">Logo</a>
             <ul class = "nav">
-                <li class = "pages"><a href="index.html#category-section">Kategorier</a></li>
-                <li class = "pages"><a href="#footer-shortcut">Kontakt Oss</a></li> 
+                <li class = "pages"><a href="index.html#category-section" aria-label="Go to category section">Kategorier</a></li>
+                <li class = "pages"><a href="#footer-shortcut" aria-label="Go to contact section">Kontakt Oss</a></li> 
             </ul>
             <ul id="nav-ikoner">
-                <li><a href ="#"><i class="fa-regular fa-user"></i></a></li>
-                <li><a href ="#"><i class="fa-regular fa-heart"></i></a></li>
-                <li><a href ="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href ="#" aria-label="User profile"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href ="#" aria-label="Liked items"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href ="checkout.html" aria-label="Checkout"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -44,16 +44,16 @@
             <h2 class="sb-headline">1. SHOPPINGBAGGEN DIN</h2>
             <section class="product-info">
                 <article class="sb-card">
-                    <img src="ressurser/dress.png" alt="Dress" class="shopping-bag-image">
+                    <img src="ressurser/dress.png" alt="Dress" class="shopping-bag-image" aria-hidden="false">
                     <article class="sb-article">
                         <article class="product-text">
-                            <h3>PRODUCT NAME</h3>
-                            <p>Kr 1999</p>
-                            <p>Farge: beige</p>
+                            <h3 aria-label="Product name">PRODUCT NAME</h3>
+                            <p aria-label="Price">Kr 1999</p>
+                            <p aria-label="Color">Farge: beige</p>
                         </article>
                         <article class="size-quantity">
                             <p>Størrelse</p>
-                            <select class="size" name="size">
+                            <select class="size" name="size" aria-label="Choose a size">
                                 <option value="s">S</option>
                                 <option value="m">M</option>
                                 <option value="l">L</option>
@@ -78,7 +78,7 @@
                         </article>
                         <article class="size-quantity">
                             <p>Størrelse</p>
-                            <select class="size" name="size">
+                            <select class="size" name="size" aria-label="Choose a size">
                                 <option value="s">S</option>
                                 <option value="m">M</option>
                                 <option value="l">L</option>
@@ -128,25 +128,25 @@
                     <article id="name-fields">
                         <article>
                             <p>Fornavn</p>
-                            <input type="text" class="info-input" name="first-name" placeholder="Nora*" maxlength="30" required>
+                            <input type="text" class="info-input" name="first-name" aria-label="First-name" placeholder="Nora*" maxlength="30" required>
                         </article>
                         <article>
                             <p>Etternavn</p>
-                            <input type="text" class="info-input" name="last-name" placeholder="Nordmann*" maxlength="50" required>
+                            <input type="text" class="info-input" name="last-name" aria-label="Last name" placeholder="Nordmann*" maxlength="50" required>
                         </article>
                     </article>
                     <article id="street-address">
                         <p>Gateadresse</p> 
-                        <input type="text" class="info-input" name="address" placeholder="BRA veien 4*" maxlength="50" required>
+                        <input type="text" class="info-input" name="address" aria-label="Your street adress" placeholder="BRA veien 4*" maxlength="50" required>
                     </article>
                     <article id="mail-info">
                         <article>
                             <p>Postnummer</p>
-                            <input type="number" class="info-input" name="postal-code" placeholder="1752*" min="0001" max="9999" required>
+                            <input type="number" class="info-input" name="postal-code" aria-label="Your postal code" placeholder="1752*" min="0001" max="9999" required>
                         </article>
                         <article>
                             <p>Poststed</p>
-                            <input type="text" class="info-input" name="city" placeholder="Halden*" maxlength="50" required>  
+                            <input type="text" class="info-input" name="city" aria-label="Your city" placeholder="Halden*" maxlength="50" required>  
                         </article>
                     </article>
                 </form>
@@ -155,9 +155,9 @@
                 <h3>Kontaktinformasjon</h3>
                 <form>
                     <p>E-post</p>
-                    <input type="text" class="info-input" name="e-mail" placeholder="Noranordmann@hiof.no...*" maxlength="50" required>
+                    <input type="text" class="info-input" name="e-mail" aria-label="Email" placeholder="Noranordmann@hiof.no...*" maxlength="50" required>
                     <p>Telefon</p>
-                    <input type="number" class="info-input" name="pnumber" placeholder="+4749***018" required>
+                    <input type="number" class="info-input" name="pnumber" aria-label="Phone" placeholder="+4749***018" required>
                 </form>
                 <article id="buttons"> 
                     <a class="black-btn" href="#">Lagre</a> 
@@ -171,7 +171,7 @@
             <section class="delivery-options">
                 <article class="delivery-card">
                     <label>
-                        <input type="radio" name="delivery" value="express">
+                        <input type="radio" name="delivery" value="express" aria-label="Express home delivery">
                         <i class="bold-text">Express Hjemlevering</i>
                     </label>
                     <p class="working-days">3-4 virkedager</p>
@@ -180,7 +180,7 @@
                 </article>
                 <article class="delivery-card">
                     <label>
-                        <input type="radio" name="delivery" value="pickuppoint">
+                        <input type="radio" name="delivery" value="pickuppoint" aria-label="Express delivery to pick-up point">
                         <i class="bold-text">Express Pakke til utleveringssted</i>
                     </label>
                     <p class="working-days">1-3 virkedager</p>
@@ -188,8 +188,8 @@
                 </article>
                 <article class="delivery-card">
                     <label>
-                        <input type="radio" name="delivery" value="express">
-                        <i class="bold-text">Express Pakke til utleveringssted</i>
+                        <input type="radio" name="delivery" value="express" aria-label="Standard home-delivery">
+                        <i class="bold-text">Standard hjemlevering</i>
                     </label>
                     <p class="working-days">5-8 virkedager</p>
                     <p>Gratis <i class="fa-solid fa-box"></i></p>
@@ -203,15 +203,15 @@
             <article class="payment-info">
                 <form>
                     <p>Kortnummer</p> 
-                    <input type="number" class="info-input" name="card-number" placeholder="342342****4435" required>
+                    <input type="number" class="info-input" name="card-number" placeholder="342342****4435" aria-label="Card information" required>
                     <article id="payment-fields">
                         <article>
                             <p>Utløpsdato</p>
-                            <input type="date" class="info-input" name="expiration-date" required>
+                            <input type="date" class="info-input" name="expiration-date" aria-label="Card expiration date" required>
                         </article>
                         <article>
                             <p>CVC/CVV</p>
-                            <input type="text" class="info-input" name="CVC/CVV" placeholder="CVC/CVV*" required>
+                            <input type="text" class="info-input" name="CVC/CVV" placeholder="CVC/CVV*" aria-label="CVC or CVV code" required>
                         </article>
                     </article>
                 </form>
@@ -252,16 +252,17 @@
                     <li><a href="index.html#p-shortcut">Produkter</a></li>
                     <li><a href="index.html#category-section">Kategorier</a></li>
                     <li><a href="#footer-logo">Kontakt oss</a></li>
+                    <li><a href="TE-WCAG.pdf">Tilgjengelighetserklæring</a></li>
                 </ul>
             </aside>
 
             <nav id="social-media-desktop">
                 <h3>SOSIALE MEDIER</h3>
                 <ul>
-                    <li><a href="https://www.instagram.com/hiofnorge/"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/hiofnorge/?locale2=nb_NO&_rdr"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://no.linkedin.com/school/hogskolen-i-ostfold/"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="https://www.instagram.com/hiofnorge/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/hiofnorge/?locale2=nb_NO&_rdr" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://no.linkedin.com/school/hogskolen-i-ostfold/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest" aria-label="Pinterest"></i></a></li>
                 </ul>
             </nav>
         </section>
@@ -269,10 +270,10 @@
         <nav id="social-media-mobile">
             <h3>SOSIALE MEDIER</h3>
             <ul>
-                <li><a href="https://www.instagram.com/hiofnorge/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/hiofnorge/?locale2=nb_NO&_rdr"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://no.linkedin.com/school/hogskolen-i-ostfold/"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                <li><a href="https://www.instagram.com/hiofnorge/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/hiofnorge/?locale2=nb_NO&_rdr" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://no.linkedin.com/school/hogskolen-i-ostfold/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://no.pinterest.com/" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
             </ul>
         </nav>
     </footer>

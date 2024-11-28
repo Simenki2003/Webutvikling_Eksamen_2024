@@ -16,33 +16,33 @@
     <header id="skip-to-top">
         <nav>
             <form>
-                <label id="nav-search">
-                    <input class="search-input" type="search" placeholder="Søk her">
-                    <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                <label id="nav-search" aria-label="Search website">
+                    <input class="search-input" type="search" placeholder="Søk her" aria-label="Search for items">
+                    <i class="search-icon fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                 </label>
             </form>
             <ul class = "nav">
-                <li class = "pages"><a href="index.html">Hjem</a></li>
-                <li class = "pages"><a href="index.html#p-shortcut">Produkter</a></li>
+                <li class = "pages"><a href="index.html" aria-label="Go to homepage">Hjem</a></li>
+                <li class = "pages"><a href="index.html#p-shortcut" aria-label="Go to products section">Produkter</a></li>
             </ul>
-            <a href="index.html" id="logo">Logo</a>
+            <a href="index.html" id="logo" aria-label="Go to homepage">Logo</a>
             <ul class = "nav">
-                <li class = "pages"><a href="index.html#category-section">Kategorier</a></li>
-                <li class = "pages"><a href="#footer-shortcut">Kontakt Oss</a></li> 
+                <li class = "pages"><a href="index.html#category-section" aria-label="Go to category section">Kategorier</a></li>
+                <li class = "pages"><a href="#footer-shortcut" aria-label="Go to contact section">Kontakt Oss</a></li> 
             </ul>
             <ul id="nav-ikoner">
-                <li><a href ="#"><i class="fa-regular fa-user"></i></a></li>
-                <li><a href ="#"><i class="fa-regular fa-heart"></i></a></li>
-                <li><a href ="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href ="#" aria-label="My user"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href ="#" aria-label="Liked items"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href ="checkout.html" aria-label="Shopping-cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="website-path">
+        <section id="website-path" aria-label="Website path">
             <p>Hjem</p>
-            <i class="fa-solid fa-chevron-right"></i>
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
             <p>Kategori</p>
-            <i class="fa-solid fa-chevron-right"></i>
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
             <p><strong>Produktnavn</strong></p>
         </section>
         <section id="desktop-flex">
@@ -62,7 +62,7 @@
                     <p>Farge: <strong>beige</strong></p>
                 </section>
                 <section>
-                    <select id="product-size" name="size">
+                    <select id="product-size" name="size" aria-label="Choose a product size">
                         <option value="choose">Velg en størrelse</option>
                         <option value="s">Small</option>
                         <option value="m">Medium</option>
@@ -70,13 +70,13 @@
                         <option value="xl">Extra-large</option>
                     </select>
                     <article id="product-buttons">
-                        <a id="black-btn2" href="#">Legg i handlekurv</a>
-                        <a href="#"><i class="fa-regular fa-heart fa-btn"></i></a> 
+                        <a id="black-btn2" href="#" aria-label="add item to Shopping-cart">Legg i handlekurv</a>
+                        <a href="#" aria-label="Add product to liked items"><i class="fa-regular fa-heart fa-btn"></i></a> 
                     </article>
                 </section>
                 <section>
                     <article class="border">
-                        <details id="materials">
+                        <details id="materials" aria-label="Dropdown section detailing materials">
                             <summary><strong>Materiale og vedlikehold</strong><i class="fa-solid fa-plus"></i></summary>
                             <ul>
                                 <li>Overmateriale: 95% viskose, 5% elastan</li>
@@ -86,13 +86,13 @@
                         </details>
                     </article>
                     <article class="border">
-                        <details id="pdetails">
+                        <details id="pdetails" aria-label="Dropdown section detailing product specifications">
                             <summary><strong>Produktdetaljer</strong><i class="fa-solid fa-plus"></i></summary>
                             <p>Epcot is a theme park at Walt disney World Resort featuring exciting attractions, international pavilions, award winning fireworks and seasonal special events</p>
                         </details>
                     </article>
                     <article class="border">
-                        <details id="sdetails">
+                        <details id="sdetails" aria-label="Dropdown section detailing size chart">
                             <summary><strong>Størrelsestabell</strong><i class="fa-solid fa-plus"></i></summary>
                             <p>Sjekk hvordan din valige størrelse konverterer til andre størrelser i vår størrelsesguide. Husk at dette kun er en generell guide og at størrelsene kan variere i forhold til merke og modell.</p>
                             <table>
@@ -216,7 +216,7 @@
                         </details>
                     </article>
                     <article class="border">
-                        <details id="previews">
+                        <details id="previews" aria-label="Dropdown section showing reviews">
                             <summary>
                                 <strong>Anmeldelser</strong>
                                 <span id="stars">
@@ -248,9 +248,9 @@
         <section>
             <h2>Lignende produkter</h2>
             <a href="index.html" class="continue-shopping">Se flere lignende produkter <i class="fa-solid fa-arrow-right"></i></a>
-            <section id="reviews" aria-labelledby="reviews">
+            <section id="reviews" aria-label="reviews">
                 <div class="scroll-container" aria-live="polite" aria-atomic="true">
-                    <article class="Product-card">
+                    <article class="Product-card" aria-label="Product cards">
                         <a href="products.html" class="image-container">
                             <span class="icon-overlay"><i class="fa-regular fa-heart"></i></span>
                             <img src="https://picsum.photos/400/400" alt="produkt bilde">
@@ -364,27 +364,28 @@
                     <li><a href="index.html#p-shortcut">Produkter</a></li>
                     <li><a href="index.html#category-section">Kategorier</a></li>
                     <li><a href="#footer-logo">Kontakt oss</a></li>
+                    <li><a href="TE-WCAG.pdf">Tilgjengelighetserklæring</a></li>
                 </ul>
             </aside>
 
-            <nav id="social-media-desktop">
+            <nav id="social-media-desktop" aria-label="Social media">
                 <h3>SOSIALE MEDIER</h3>
                 <ul>
-                    <li><a href="https://www.instagram.com/hiofnorge/"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/hiofnorge/?locale2=nb_NO&_rdr"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://no.linkedin.com/school/hogskolen-i-ostfold/"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="https://www.instagram.com/hiofnorge/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/hiofnorge/?locale2=nb_NO&_rdr" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://no.linkedin.com/school/hogskolen-i-ostfold/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://no.pinterest.com/" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
                 </ul>
             </nav>
         </section>
 
-        <nav id="social-media-mobile">
+        <nav id="social-media-mobile" aria-label="Social media">
             <h3>SOSIALE MEDIER</h3>
             <ul>
-                <li><a href="https://www.instagram.com/hiofnorge/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/hiofnorge/?locale2=nb_NO&_rdr"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://no.linkedin.com/school/hogskolen-i-ostfold/"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                <li><a href="https://www.instagram.com/hiofnorge/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/hiofnorge/?locale2=nb_NO&_rdr" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://no.linkedin.com/school/hogskolen-i-ostfold/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://no.pinterest.com/" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a></li>
             </ul>
         </nav>
     </footer>
